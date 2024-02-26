@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(/img/var5.jpg);
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffffce;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#studentInfo, #roomInfo {
+    margin-top: 30px;
+}
+
+/* Styling for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+td {
+    font-size: 16px;
+}
+
+.table_content {
+    margin: 60px auto 60px;
+    width: 70%;
+
+}
+
+.student_details,
+.student_details_room{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+}
+
+.room_table{
+    min-height: 312px;
+}
+
+
+.student_details th, .student_details td, 
+.student_details_room th,
+.student_details_room td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.student_details th,
+.student_details_room th {
+    background-color: #f2f2f2   ;
+    color:  rgba(0, 0, 0, 0.774);
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+    
+}
+
+.student_details td,
+.student_details_room td{
+    color: black;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#studentInfo,
+#roomInfo{
+    display: none;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }

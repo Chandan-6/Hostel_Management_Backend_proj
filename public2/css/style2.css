@@ -1,0 +1,115 @@
+body {
+    background-image: url(/img/var1.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+.years {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.492); 
+    width: 805px;
+    height: 310px;
+    border-radius: 16px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 200;
+    margin-top: 100px;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 20px; 
+}
+
+.main {
+    width: 800px;
+    margin: 0 auto; 
+}
+
+.lab {
+    margin-top: 5px;
+    font-size: large;
+}
+
+.box1 {
+    background-color: #3333337f; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.clglogo img {
+    height: 70px;
+}
+
+.clgname span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.imgbox{
+    border-radius: 16px;
+    
+}
+
+.accept{
+    background-color: rgb(63, 210, 63);
+    border-radius: 16px;
+    padding: 6px 12px 6px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#hostelInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accept{
+    display: none;
+}
+.accept:active{
+    transform: scale(.75);
+    box-shadow: 1px 1px 1px rgb(85, 85, 85);
+}   
+.accept:hover{
+    box-shadow: 1px 1px 1px rgb(85, 85, 85),;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }

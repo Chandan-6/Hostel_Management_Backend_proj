@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warden</title>
+    <link rel="stylesheet" href="/css/warden_main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Warden Login Successful</h1>
+        <div class="warden-options">
+    
+          <form action="/api/warden/allocateHostel" method="GET" >
+            <div class="warden-option">
+              <h2>Hostel Allocation</h2>
+              <p>Set each hostel to particular year students.</p>
+              <button id="studentLoginBtn" name="submit" type="submit">Let's set</button>
+            </div>
+        </form>
+    
+          <form action="/api/warden/checkHostllers" method="GET">
+          <div class="warden-option">
+            <h2>Check Hostellers Info</h2>
+            <p>Check the hostellers info who opted the beds already.</p>
+            <button id="wardenLoginBtn" name="submit" type="submit">Check</button>
+          </div>
+          </form>
+
+          <form action="/api/warden/outingPermissions" method="GET">
+          <div class="warden-option">
+            <h2>Outing Permissions</h2>
+            <p>Accept & Reject the outing Permissions of the hostellers.</p>
+            <button id="wardenLoginBtn" name="submit" type="submit">See</button>
+          </div>
+          <!-- </form> -->
+
+        </div>
+      </div>
+  <div class="loader"></div>
+
+    
+  <script src="/script/script_warden_main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to JNTU</h1>
+    <div class="login-options">
+
+      <form id="loginForm" action="/api/students/loginPage" method="GET">
+        <div class="login-option">
+          <h2>Student Login</h2>
+          <p>If you are a student, login here to access your account.</p>
+          <button id="studentLoginBtn" name="submit" type="submit">Login</button>
+        </div>
+    </form>
+
+      <form action="/api/warden/loginPage" method="GET">
+        <div class="login-option">
+          <h2>Warden Login</h2>
+          <p>If you are a warden, login here to manage hostel facilities.</p>
+          <button id="wardenLoginBtn" name="submit" type="submit">Login</button>
+        </div>
+    </form>
+    </div>
+  </div>
+
+  <div class="loader"></div>
+
+
+
+<script src="/script/script_index.js"></script>
+</body>
+</html>

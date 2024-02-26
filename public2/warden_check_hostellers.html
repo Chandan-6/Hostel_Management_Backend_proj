@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Information</title>
+  <link rel="stylesheet" href="/css/style_warden_check_hostellers.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hostel Information</h1>
+
+    
+    <div class="search-by-student">
+      <h2>Search by Student ID</h2>
+      <input type="text" id="studentSearch" placeholder="Enter student ID" name="jntu_no">
+      <button id="searchStudentBtn" type="submit" value="submit">Search</button>
+      <div id="studentInfo">
+       <table class="student_details">
+        <tr>
+          <th>Name</th>
+          <th>jntu_no / ID</th>
+          <th>Year of study</th>
+          <th>Parent Mobile Number</th>
+          <th>Parent Email</th>
+          <th>Hostel ID</th>
+          <th>Floor No</th>
+          <th>Room No</th>
+          <th>Room Type</th>
+        </tr>
+
+        <tr>
+          <td id="studentName"></td>
+          <td id="studentID"></td>
+          <td id="yearOfStudy"></td>
+          <td id="parentPhoneNo"></td>
+          <td id="ParentEmail"></td>
+          <td id="HostelID"></td>
+          <td id="FloorNo"></td>
+          <td id="RoomNo"></td>
+          <td id="RoomType"></td>
+        </tr>
+       </table>
+      </div>
+    </div>
+
+   
+    <div class="search-by-room">
+      <h2>Search by Room Number</h2>
+      <input type="text" id="roomSearch" placeholder="Enter room number" name="roomNo">
+      <button id="searchRoomBtn" type="submit" value="submit">Search</button>
+      <div id="roomInfo">
+        <table class="student_details_room">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>jntu_no / ID</th>
+            <th>Year of study</th>
+            <th>Parent Mobile Number</th>
+            <th>Parent Email</th>
+            <th>Hostel ID</th>
+            <th>Floor No</th>
+            <th>Room No</th>
+            <th>Room Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="studentName"></td>
+            <td id="studentID"></td>
+            <td id="yearOfStudy"></td>
+            <td id="parentPhoneNo"></td>
+            <td id="ParentEmail"></td>
+            <td id="HostelID"></td>
+            <td id="FloorNo"></td>
+            <td id="RoomNo"></td>
+            <td id="RoomType"></td>
+          </tr>
+        </tbody>
+         </table>
+      </div>
+    </div>
+  </div>
+  <div class="loader"></div>
+
+  <script src="/script/script_warden_check_hostellers.js"></script>
+</body>
+</html>

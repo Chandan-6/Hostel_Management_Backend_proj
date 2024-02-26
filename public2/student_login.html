@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="/css/student_login.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="clglogo"><img src="/img/college_logo.png" style="height: 70px;"  alt=""></div>
+        <div class="clgname"><span>JNTU</span></div>
+    </div>
+
+    <div class="background-image"></div> 
+    <div class="shade"></div>
+
+    <div class="box">
+        <form id="myform" action="/api/students/loginStudent" method="POST">
+
+            <label for="jntu_no">Register Number</label>
+            <input type="text" id="jntu_no" name="jntu_no" required>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" class="mt" required>
+            <br>
+        
+            <button type="submit" value="Submit">Login</button>
+        </form>
+
+        <form action="/api/students/registerPage" method="GET" id="registerForm">
+            <button type="submit" value="Submit" id="registerPage">Register</button>
+        </form>
+    </div>
+
+    <div class="loader"></div>
+
+
+    <script src="/script/script_student_login.js"></script>
+
+</body>
+</html>

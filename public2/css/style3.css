@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/chan1.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.navbar {
+    background-color: #333333d1;
+    height: 45px;
+    width: 100%;
+    padding: 1rem 1rem 0.5rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 0;
+    left: 0;
+}
+
+.college_name {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color:  rgba(255, 255, 255, 0.54);
+}
+
+.table_content {
+    margin: 60px auto 60px;
+    width: 70%;
+
+}
+
+.student_hostel_details, .room_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.room_table{
+    min-height: 312px;
+}
+
+
+.student_hostel_details th, .student_hostel_details td, 
+.room_table th, .room_table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.student_hostel_details th, 
+.room_table th {
+    background-color: darkslategray;
+    color:  rgba(255, 255, 255, 0.774);
+}
+
+.student_hostel_details td{
+    backdrop-filter: blur(5px);
+    color: white;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.room_selection_container {
+    margin-top: 90px;
+    padding: 0 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apply_title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.room_selection_table_box {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.504); /* Adjust the alpha value to control the transparency */
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    padding: 10px 8px 10px;
+    width: 500px;
+    color: black;
+}
+
+#submit_btn, #finalBtn {
+    margin: 20px auto 20px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #387ded;
+    text-align: center;
+    font-size: 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+#finalBtn {
+    padding: 4px 9px;
+    border-radius: 8px;
+    background-color: #2ED12E;
+    text-align: center;
+    font-size: 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#submit_btn:hover {
+    background-color: #1460da;
+}
+
+#finalBtn:hover {
+    background-color: #15e015;
+}
+
+.congrats{
+    margin: 10px auto 10px;
+    display: none;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }

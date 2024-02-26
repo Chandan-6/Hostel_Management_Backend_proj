@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    background-color: #333333d1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.clglogo img {
+    height: 70px;
+}
+
+.clgname span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.background-image {
+    background-image: url('../img/clgbg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    position: absolute;
+    width: 100%; 
+    top: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.547); 
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+
+
+.box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box label {
+    margin-bottom: 5px;
+}
+
+.box input[type="text"],
+.box input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.box button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box button:hover {
+    background-color: #0056b3;
+}
+.shade{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.553);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#loginPage{
+    font-size: 12px;
+    background:none;
+    outline: none;
+    border: none;
+    text-decoration: underline;
+    color: blue;
+    text-align: right;
+}
+
+.congrats{
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    z-index: 100px;
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+
+  .loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    z-index: 200px;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from{
+      transform: rotate(0turn);
+    }
+    to{
+      transform: rotate(1turn);
+    }
+  }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floor Selection</title>
+    <link rel="stylesheet" href="/css/style3.css">
+</head> 
+<body>
+    <div class="background-overlay"></div>
+    <nav class="navbar">
+        <img src="/img/college_logo.png" alt="college logo" width="34px" height="34px">
+        <p class="college_name">JNTU University</p>
+    </nav>
+
+    <div class="room_selection_container">
+        <h1 class="apply_title"><span style="color: rgb(50, 151, 50); border:1px solid green; padding:5px; border-radius:14px;background-color: rgba(255, 255, 255, 0.647);">Apply for room</span></h1>
+        <div class="room_selection_table_box">
+            <table class="room_table">
+                <tr>
+                    <th>Select Floor :</th>
+                    <td>
+                        <select name="floors" id="floors">
+                            <option value="" selected disabled>Select a Floor</option>
+                            <option value="1">Floor-1</option>
+                            <option value="2">Floor-2</option>
+                            <option value="3">Floor-3</option>
+                            <option value="4">Floor-4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="floor floor1">
+                    <td colspan="2">
+                        <p>Non-AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="101"data-room-type="Non-AC">
+                        <label for="html">A101 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="102"data-room-type="Non-AC">
+                        <label for="html">A102 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="103"data-room-type="Non-AC">
+                        <label for="html">A103 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor1">
+                    <td colspan="2">
+                        <p>AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="101" data-room-type="AC">
+                        <label for="html">A101 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="102" data-room-type="AC">
+                        <label for="html">A102 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="103" data-room-type="AC">
+                        <label for="html">A103 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor2">
+                    <td colspan="2">
+                        <p>Non-AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="201" data-room-type="Non-AC">
+                        <label for="html">A201 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="202" data-room-type="Non-AC">
+                        <label for="html">A202 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="203" data-room-type="Non-AC">
+                        <label for="html">A203 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor2">
+                    <td colspan="2">
+                        <p>AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="201" data-room-type="AC">
+                        <label for="html">A201 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="202" data-room-type="AC">
+                        <label for="html">A202 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="203" data-room-type="AC">
+                        <label for="html">A203 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor3">
+                    <td colspan="2">
+                        <p>Non-AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="301" data-room-type="Non-AC">
+                        <label for="html">A301 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="302" data-room-type="Non-AC">
+                        <label for="html">A302 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="303" data-room-type="Non-AC">
+                        <label for="html">A303 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor3">
+                    <td colspan="2">
+                        <p>AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="301" data-room-type="AC">
+                        <label for="html">A301 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="302" data-room-type="AC">
+                        <label for="html">A302 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="303" data-room-type="AC">
+                        <label for="html">A303 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor4">
+                    <td colspan="2">
+                        <p>Non-AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="401" data-room-type="Non-AC">
+                        <label for="html">A401 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="402" data-room-type="Non-AC">
+                        <label for="html">A402 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="403" data-room-type="Non-AC">
+                        <label for="html">A403 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+                <tr class="floor floor4">
+                    <td colspan="2">
+                        <p>AC Rooms List</p>
+                        <input type="radio" id="room" name="AC" value="401" data-room-type="AC">
+                        <label for="html">401 [ No.of Beds: 3] <span class="beds_availability">0 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="402" data-room-type="AC">
+                        <label for="html">402 [ No.of Beds: 3] <span class="beds_availability">1 Bed's Available</span></label><br>
+                        <input type="radio" id="room" name="AC" value="403" data-room-type="AC">
+                        <label for="html">403 [ No.of Beds: 3] <span class="beds_availability">2 Bed's Available</span></label><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button id="submit_btn">Submit</button>
+    </div>
+
+<h1 class="congrats">Room Allocated Succefully</h1>
+
+    <!--  Final Details -->
+    <form id="roomSelectionForm" method="POST">
+        <div class="table_content">
+            <table class="student_hostel_details">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Hostel Name</th>
+                    <th>Floor</th>
+                    <th>Room No</th>
+                    <th>AC/Non-AC</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td id="studentName"></td>
+                    <td id="hostelID"></td>
+                    <td id="floorNo"></td>
+                    <td id="roomNo"></td>
+                    <td id="roomType"></td>
+                    <input type="hidden" id="FloorNumber" name="floor" value="">
+                    <input type="hidden" id="RoomNumber" name="room" value="">
+                    <input type="hidden" id="RoomType" name="roomType" value="">
+                    <td id="actioned"> 
+                        <button type="submit" value="submit" id="finalBtn">Confirm</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+    <div class="loader"></div>
+
+<script src="/script/script_index3.js"></script>
+</body>
+</html>

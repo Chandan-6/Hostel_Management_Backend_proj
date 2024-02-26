@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management</title>
+  <link rel="stylesheet" href="/css/style_warden_hostel_allocation.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/img/college_logo.png" alt="college logo" width="34px" height="34px">
+        <p class="college_name">JNTU University</p>
+    </nav>
+
+    <form id="allocationForm" method="POST">
+      <div class="container">
+        <h1>Set Hostel Year</h1>
+        <div class="hostel">
+          <label for="hostel1">Hostel A</label>
+          <select id="hostel1">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <div class="hostel">
+          <label for="hostel2">Hostel B</label>
+          <select id="hostel2">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <div class="hostel">
+          <label for="hostel3">Hostel C</label>
+          <select id="hostel3">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <div class="hostel">
+          <label for="hostel4">Hostel D</label>
+          <select id="hostel4">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <!-- Add more hostels as needed -->
+
+        <button id="saveBtn" name="submit" type="submit">Save</button>
+      </div>
+  </form>
+
+<h1 class="congrats">Hostel Allocated Succefully</h1>
+<div class="loader"></div>
+
+  <script src="/script/script_warden_hostel_allocation.js"></script>
+</body>
+</html>

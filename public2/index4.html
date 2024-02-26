@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permission and Leaves Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/style4.css">
+    
+</head>
+<body>
+    <div class="box1">
+        <div class="clglogo"><img src="/img/college_logo.png" style="height: 70px;"  alt=""></div>
+        <div class="clgname"><span>JNTU</span></div>
+    </div>
+    <div class="container">
+        <h2>Permission and Leaves Form</h2>
+        <form method="POST" id="OutingForm">
+            <label for="jntuID">JNTU ID:</label>
+            <input type="text" id="jntuID" name="jntu_no"  required>
+            <label for="permission-type">Permission Type:</label>
+            <select id="permission-type" name="permissionType" required>
+                <option value="">Select Permission Type</option>
+                <option value="Outing">outing permission</option>
+                <option value="Leave">Leave</option>
+            </select>
+
+            <!-- <input type="hidden" id="permissionType"  name="permissionType" value=""> -->
+
+            <label for="date">Out Date:</label>
+            <input type="date" id="outDate" name="outDate" required>
+            <label for="time">Out Time:</label>
+            <input type="time" id="outTime" name="outTime" required>
+
+            <label for="date">In Date:</label>
+            <input type="date" id="inDate" name="inDate" required>
+            <label for="time">In Time:</label>
+            <input type="time" id="inTime" name="inTime" required>
+
+            
+            <label for="reason">Reason:</label>
+            <textarea id="reason" name="reason" required></textarea>
+            <input type="submit" value="Submit" id="outingSumbit">
+
+            <p id="alertMessage">Outing Permission sent</p>
+        </form>
+        
+    </div>
+
+    <button type="submit" value="submit" name="submit" id="historyButton">Click to see History</button>
+
+    <div class="outing-history">
+        <h2>Outing Permission History</h2>
+        <p style="text-align: center;">refresh</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>JNTU ID</th>
+                    <th>Permission Type</th>
+                    <th>Out Date</th>
+                    <th>Out Time</th>
+                    <th>In Date</th>
+                    <th>In Time</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="outing-history-table">
+                <!-- This will be populated with outing history dynamically -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="loader"></div>
+
+<script src="/script/script_index4.js"></script>
+</body>
+</html>

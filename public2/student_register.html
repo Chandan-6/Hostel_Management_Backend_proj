@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="/css/student_register.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="clglogo"><img src="/img/college_logo.png" style="height: 70px;"  alt=""></div>
+        <div class="clgname"><span>JNTU</span></div>
+    </div>
+
+    <div class="background-image"></div> 
+    <div class="shade"></div>
+
+    <div class="box">
+        <h3 class="congrats">Registration successful.</h3>
+        <form id="myform" method="POST">
+            <label for="name">Student Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="jntu_no">Register Number</label>
+            <input type="text" id="jntu_no" name="jntu_no" required>
+
+            <label for="year">Year</label>
+            <input type="text" id="year" name="year" required>
+
+            <label for="parent_phone_number">Phone Number</label>
+            <input type="tel" id="parent_phone_number" name="parent_phone_number" class="mt" required>
+
+            <label for="parent_email">Parent Email</label>
+            <input type="text" id="parent_email" name="parent_email" class="mt" required>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" class="mt" required>
+            <br>
+        
+            <button type="submit" value="Submit">Register</button>
+        </form>
+
+        
+        <form action="/api/students/loginPage" method="GET" id="registerForm">
+            <button type="submit" value="Submit" id="loginPage">Login</button>
+        </form>
+    </div>
+
+    
+    <div class="loader"></div>
+
+    <script src="/script/script_student_register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body style="background-color: #aad3de;">
+    <div class="box1">
+        <div class="clglogo"><img src="/img/college_logo.png" style="height: 70px;"  alt=""></div>
+        <div class="clgname"><span >JNTU</span></div>
+    </div>
+    <div class="box">
+        <div class="main">
+            <br>
+            <h1 style="font-size: x-large; font-family: 'Times New Roman', Times, serif; text-align: center;  border-radius: 16px;"><span style="background-color: rgba(0, 0, 0, 0.272); color:white; padding:10px; border-radius:14px;">KAKINADA JNTU</span></h1>
+            <img class="imgbox" style="margin-top: 130px;" align="right"  src="/img/man1..jpg" alt="" style="border-radius: 16px;">
+            <div class="years">
+                <form id="hostelForm">
+                    <br>
+                    <div class="lab">
+                        <label for="year" >Select your studying year:</label>
+                        <select id="year" name="year">
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                
+                <form id="hostelInfo" action="/api/students/acceptHostel" method="POST">
+                    <h2>Your allotted hostel:</h2>
+                    <p id="hostel"></p>
+                    <input type="hidden" id="hostelInput" name="hostelID" value="">
+                    <button class="accept" id="acceptButton" type="submit" value="submit">Accept hostel Allocation</button>
+                    <!-- <p class="accept" id="acceptButton">Accept hostel Allocation</p> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader"></div>
+
+    <script src="/script/script_index2.js"></script>
+</body>
+</html>

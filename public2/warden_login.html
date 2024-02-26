@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="/css/style_warden_login.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="clglogo"><img src="/img/college_logo.png" style="height: 70px;"  alt=""></div>
+        <div class="clgname"><span>JNTU</span></div>
+    </div>
+
+    <div class="background-image"></div> 
+    <div class="shade"></div>
+
+    <div class="box">
+        <form id="myform" action="/api/warden/loginWarden" method="POST">
+            <h1 style="text-align: center;">Warden Login</h1>
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" name="user_id" required>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" required>
+            <br>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+    <div class="loader"></div>
+
+    <script src="/script/script_warden_login.js"></script>
+
+</body>
+</html>

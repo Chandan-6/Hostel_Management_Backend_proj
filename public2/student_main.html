@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="/css/warden_main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Login Successful</h1>
+        <div class="student-options">
+    
+          <form action="/api/students/selectHostel" method="GET" >
+            <div class="student-option">
+              <h2>Hostel Allocation</h2>
+              <p>Confirm your preffered Hotel provide by the warden.</p>
+              <button id="hostelBtn" name="submit" type="submit">Let's Confirm</button>
+            </div>
+        </form>
+    
+          <form action="/api/students/outingPermission" method="GET">
+          <div class="student-option">
+            <h2>Outing Permissions</h2>
+            <p>Send request to the warden for outing permission.</p>
+            <button id="outingBtn" name="submit" type="submit">Go</button>
+          </div>
+          </form>
+
+
+        </div>
+      </div>
+    
+      <div class="loader"></div>
+
+  <script src="/script/script_student_main.js"></script>
+    
+</body>
+</html>
